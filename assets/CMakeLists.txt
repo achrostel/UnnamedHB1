@@ -1,0 +1,35 @@
+set(TEXTURE_DIR ${PROJECT_SOURCE_DIR}/assets/textures)
+set(MODELS_DIR ${PROJECT_SOURCE_DIR}/assets/models)
+set(COLLISIONS_DIR ${PROJECT_SOURCE_DIR}/assets/collisions)
+set(SOUNDS_DIR ${PROJECT_SOURCE_DIR}/assets/sound)
+
+psn00bsdk_target_incbin(GAME PRIVATE room_amf_data ${MODELS_DIR}/room.amf)
+psn00bsdk_target_incbin(GAME PRIVATE enemy_amf_data ${MODELS_DIR}/enemy.amf)
+psn00bsdk_target_incbin(GAME PRIVATE pellet_amf_data ${MODELS_DIR}/pellet.amf)
+psn00bsdk_target_incbin(GAME PRIVATE light_amf_data ${MODELS_DIR}/light.amf)
+psn00bsdk_target_incbin(GAME PRIVATE cyl_amf_data ${MODELS_DIR}/cyl.amf)
+
+psn00bsdk_target_incbin(GAME PRIVATE enemy_aamf_data ${MODELS_DIR}/map.aamf)
+
+psn00bsdk_target_incbin(GAME PRIVATE transp_aif_data ${TEXTURE_DIR}/transp.aif)
+psn00bsdk_target_incbin(GAME PRIVATE ceilBase_aif_data ${TEXTURE_DIR}/ceilBase.aif)
+psn00bsdk_target_incbin(GAME PRIVATE ceilLight_aif_data ${TEXTURE_DIR}/ceilLight.aif)
+psn00bsdk_target_incbin(GAME PRIVATE floor_aif_data ${TEXTURE_DIR}/floor.aif)
+psn00bsdk_target_incbin(GAME PRIVATE wall_aif_data ${TEXTURE_DIR}/wall.aif)
+psn00bsdk_target_incbin(GAME PRIVATE cam_aif_data ${TEXTURE_DIR}/camera.aif)
+psn00bsdk_target_incbin(GAME PRIVATE buttons_idle_aif_data ${TEXTURE_DIR}/idleButtons.aif)
+psn00bsdk_target_incbin(GAME PRIVATE buttons_active_aif_data ${TEXTURE_DIR}/activeButtons.aif)
+
+
+psn00bsdk_target_incbin(GAME PRIVATE test_acf_data ${COLLISIONS_DIR}/test.acf)
+
+psn00bsdk_target_incbin(GAME PRIVATE FS0 ${SOUNDS_DIR}/FS_TILE0.vag)
+psn00bsdk_target_incbin(GAME PRIVATE FS1 ${SOUNDS_DIR}/FS_TILE1.vag)
+psn00bsdk_target_incbin(GAME PRIVATE FS2 ${SOUNDS_DIR}/FS_TILE2.vag)
+psn00bsdk_target_incbin(GAME PRIVATE FS3 ${SOUNDS_DIR}/FS_TILE3.vag)
+psn00bsdk_target_incbin(GAME PRIVATE collect_vag_data ${SOUNDS_DIR}/collect.vag)
+psn00bsdk_target_incbin(GAME PRIVATE warning_vag_data ${SOUNDS_DIR}/warning.vag)
+psn00bsdk_target_incbin(GAME PRIVATE light_vag_data ${SOUNDS_DIR}/light.vag)
+psn00bsdk_target_incbin(GAME PRIVATE metal_vag_data ${SOUNDS_DIR}/metalstep.vag)
+psn00bsdk_target_incbin(GAME PRIVATE use_ammo_vag_data ${SOUNDS_DIR}/ammo.vag)
+psn00bsdk_target_incbin(GAME PRIVATE ding_vag_data ${SOUNDS_DIR}/ding.vag)
